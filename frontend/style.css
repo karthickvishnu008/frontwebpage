@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+            /* 400 font-family: 'Lexend Deca', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+            /* 700 font-family: 'Big Shoulders Display', cursive; */
+
+            /* - Mobile: 375px
+            - Desktop: 1440px */
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --Very-light-gray : hsl(0, 0%, 95%);
+}
+
+                        /* - Font size: 15px */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Very-light-gray);
+}
+
+.container{
+    margin: 4em 2em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    padding: 2em;
+    height: 28em;
+}
+
+.card h1{
+    color: var(--Very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.card p{
+    color: var(--Transparent-white-paragraphs);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 50px;
+}
+
+.card-1{
+    background-color: var(--Bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.card-2{
+    background-color: var(--Dark-cyan);
+}
+
+.card-3{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.card a{
+    padding: 15px 30px;
+    background-color: var(--Very-light-gray);
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+}
+
+.card-1 a{
+    color: var(--Bright-orange);
+}
+
+.card-2 a{
+    color: var(--Dark-cyan);
+}
+
+.card-3 a{
+    color: var(--Very-dark-cyan);
+}
+
+.card-1 a:hover{
+    background-color: var(--Bright-orange);
+    color: var(--Very-light-gray);
+    border: 2px solid ;
+}
+
+.card-2 a:hover{
+    background-color: var(--Dark-cyan);
+    color: var(--Very-light-gray);
+    border: 2px solid ;
+}
+
+.card-3 a:hover{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-light-gray);
+    border: 2px solid ;
+}
+
+img{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.attribution { 
+    font-size: 15px; 
+    text-align: center;
+    margin-top: 3em; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width:1200px){
+
+    .container{
+        flex-direction: row;
+        margin: 8em 16em 0;
+    }
+
+    .card-1{
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card-3{
+        border-radius: 0 10px 10px 0;
+    }
+
+    .card p{
+        margin: 0 2em 6.5em;
+        font-size: 0.80em;
+        line-height: 1.5;
+    }
+
+    .card h1{
+        margin: 0 .7em 30px;
+    }
+
+    img{
+        margin-left: 1.7em;
+    }
+
+}
